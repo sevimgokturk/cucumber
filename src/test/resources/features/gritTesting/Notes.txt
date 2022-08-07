@@ -1,0 +1,13 @@
+INSTALLATION:
+LINK: https://www.selenium.dev/documentation/grid/getting_started/
+1. Create a folder on desktop and name it as SeleniumServer
+2. Download Selenium Server: https://www.selenium.dev/downloads/
+   Download Chrome Driver: https://chromedriver.chromium.org/downloads
+   Download Firefox Driver: https://github.com/mozilla/geckodriver/releases
+   Move all of them to SeleniumServer folder and unzip them.
+3. Open your Command Prompt or Terminal and change the directory to
+   SeleniumServer folder
+4. Run the server
+   http://192.168.1.102:4444 => this link will show us the grid details
+
+   5. create a feature file

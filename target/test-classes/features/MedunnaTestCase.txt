@@ -1,0 +1,80 @@
+
+++++++++Doctor may request a test
+"Test should have following items as checkmark options;  Glucose, Urea, Creatinine, Sodium
+Potassium, Total protein, Albumin, Hemoglobin"++++++++++++
+
+Steps	Test Data
+1_User Goes to https://medunna.com	user as a doc: team87_doctor
+2_User signs in as a doctor	passwordForAll= 1234567
+4_User verifies that his account is displayed	https://medunna.com/
+5_User reaches My Appointements from My Pages
+6_User verifies that the Appointments page is displayed
+7_User clicks on one of  the Edit buttons.
+8_User verifies that the Create or Edit an Appointment page is displayed
+9_User clicks on the Request A Test button.
+10_User verifies that the Test Items page is displayed
+11_User can choose the test items  such as:
+team87Hemoglobin
+team87Cholesterol
+team87Sodium
+team87Potassium
+12_User verifies checkbox is selected
+13_User click on save button
+14_user verifie "A new Test  is cereated with identifier" message  is displayed
+
+
+
+Steps
+1_User Goes to https://medunna.com
+2_User signs in as a doctor
+3_User reaches My Appointements from My Pages
+4_User clicks on one of  the Edit buttons.
+5_User clicks on the Request A Test button.
+6_User click on save button
+7_User verifie "Test item list can not be empty" is displayed
+
+
+
+
++++++++++++++++++++After test results request and staff updates for test results,
+doctor can see all test information such as; id, name(Urea, Sodium, Glucose etc..),
+default max value, default min value, test, description and the date	High+++++++++
+
+1_User Goes to https://medunna.com
+2_User should sign in as a doctor
+3_User clicks on My Pages then My Appointements
+4_User clicks on one of the Edit button.
+5_User clicks on the Show Test Result button.
+6_User clicks on one of the View Results button.
+7_User verifies that the Test Results page is displayed
+8_User verifies that all the test informations are displayed such as:
+ID
+NAME
+RESULT
+MIN_MAX VALUE
+DEFAULT  MIN_MAX VALUE
+TEST
+
+
+
+
+
+
++++++++++Doctor can also request Impatient ( patient can stay in hospital )++++++++++++++
+
+1_User Goes to https://medunna.com
+2_User should sign in as a doctor
+3_User clicks on My Pages then My Appointements
+4_User clicks on one of the Edit button.
+5_User clicks on the Request Inpatient Result button.
+6_User get error message: "InPatient request already done for this appointment"
+
+
+1_User Goes to https://medunna.com	user as a doc:
+2_User should sign in as a doctor
+3_User clicks on My Pages then My Appointements
+4_User clicks on one of the Edit button.
+5_User clicks on the Request Inpatient Result button.
+6_User verifies that "A new In Patient is created with identifier 103211" message is displayed
+
+
